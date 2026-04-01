@@ -1,0 +1,225 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 4px solid #ff6b6b;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.campo {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ffd7b5;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #fff9f5;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ff6b6b;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.1);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+    background: linear-gradient(135deg, #ff5252 0%, #ff7e42 100%);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+.resultado {
+    margin-top: 35px;
+    padding: 25px;
+    background: #fff9f5;
+    border-radius: 15px;
+    border-left: 8px solid #ff6b6b;
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resultado h3 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 2px dashed #ffb8b8;
+    padding-bottom: 12px;
+}
+
+.resultado p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.resultado strong {
+    color: #ff6b6b;
+    font-size: 24px;
+    font-weight: 700;
+    background: #fff0e6;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: 2px solid #ffb8b8;
+}
+
+.explicacao {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff0e6 0%, #ffe6d5 100%);
+    border-radius: 12px;
+    border: 2px solid #ffb8b8;
+}
+
+.explicacao p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    background: transparent;
+    box-shadow: none;
+    padding: 5px;
+    justify-content: flex-start;
+}
+
+.explicacao p:first-child {
+    font-weight: 700;
+    color: #ff6b6b;
+    font-size: 18px;
+    border-bottom: 1px solid #ffb8b8;
+    padding-bottom: 8px;
+}
+
+.voltar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.voltar a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: #f0f0f0;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.voltar a:hover {
+    background-color: #ff6b6b;
+    color: white;
+    transform: translateX(-5px);
+    border-color: #ffb8b8;
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 14px;
+    }
+    
+    .resultado p {
+        font-size: 16px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .resultado strong {
+        font-size: 20px;
+        width: 100%;
+    }
+}

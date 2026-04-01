@@ -1,0 +1,143 @@
+/* ========== EXERCÍCIO 2 - ESTILO VERDE ========== */
+/* Reset básico para padronizar todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container principal que envolve todo o conteúdo */
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do título principal */
+h1 {
+    color: #11998e;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 4px solid #11998e;
+    padding-bottom: 15px;
+}
+
+/* Estilo do formulário */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo da div que envolve cada campo */
+.campo {
+    margin-bottom: 25px;
+}
+
+/* Estilo dos rótulos (labels) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Efeito quando o campo está em foco (clicado) */
+input[type="number"]:focus {
+    outline: none;
+    border-color: #11998e;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(17, 153, 142, 0.1);
+}
+
+/* Estilo do botão de enviar */
+input[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #11998e 0%, #0e7c72 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo da div de resultados */
+.resultado {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 6px solid #11998e;
+    animation: slideIn 0.5s ease;
+}
+
+
+/* Estilo do subtítulo de resultados */
+.resultado h3 {
+    color: #11998e;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 2px solid #11998e;
+    padding-bottom: 10px;
+}
+
+/* Estilo dos parágrafos de resultado */
+.resultado p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Estilo do link de voltar */
+.voltar {
+    text-align: center;
+    margin-top: 25px;
+  
+}
+
+.voltar a {
+    color: #11998e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: inline-block;
+}
+
