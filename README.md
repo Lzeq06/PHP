@@ -40,6 +40,7 @@
 | 07 | media_aluno                    | Calcula a média de três notas e informa se o aluno foi aprovado ou reprovado | [Abrir](./07_media_aluno) |
 | 08 | folha_pagamento                | Calcula salário bruto, desconto de INSS e salário líquido                | [Abrir](./08_folha_pagamento) |
 | 09 | folha_pgto                     | Sistema completo com cadastro de funcionários e visualização de demonstrativos | [Abrir](./09_folha_pgto) |
+| 10 | gerenciamento de produtos      | Sistema completo com cadastro, edição e venda de produtos| [Abrir](./09_folha_pgto) |
 | 10 | PetClean                       | Sistema de gerenciamento de petshop com controle de clientes, pets, serviços e agendamentos | [Abrir](./PetClean) |
 
 <br>
